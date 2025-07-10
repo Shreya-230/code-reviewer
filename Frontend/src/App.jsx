@@ -1,29 +1,3 @@
-// import { useState ,useEffect} from 'react'
-// import "prismjs/themes/prism-tomorrow.css"
-// import prism from "prismjs"
-// import './App.css'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>  
-//     <main>
-//       <div className="left">
-//         <div className="code">
-//           <div className="review">
-//              Review
-//           </div>
-//         </div>
-//       </div>
-
-//       <div className="right"></div>
-//     </main>  
-//     </>
-//   )
-// }
-
-// export default App
 import { useState, useEffect } from 'react'
 import "prismjs/themes/prism-tomorrow.css"
 import Editor from "react-simple-code-editor"
@@ -35,11 +9,9 @@ import axios from 'axios'
 import './App.css'
 
 function App() {
-  const [ count, setCount ] = useState(0)
   const [ code, setCode ] = useState(` function sum() {
   return 1 + 1
 }`)
-
   const [ review, setReview ] = useState(``)
 
   useEffect(() => {
@@ -86,7 +58,4 @@ function App() {
     </>
   )
 }
-
-
-
 export default App
